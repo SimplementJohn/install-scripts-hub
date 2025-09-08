@@ -53,3 +53,4 @@ echo FFmpeg est maintenant disponible dans votre PATH.
 echo Vous pouvez tester avec la commande : ffmpeg -version
 echo.
 pause
+
