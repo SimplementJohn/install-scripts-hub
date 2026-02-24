@@ -1,22 +1,64 @@
-# Scripts d’installation, activation et outils video
+# 🛠 Scripts d’installation, activation et outils vidéo
 
-## Scripts existants
+Ce dépôt regroupe plusieurs scripts d’installation, d’activation et d’administration système.
 
-- `mkvmerge.bat`  
-  *Installe et configure mkvmerge via Chocolatey (fusion / edition de conteneurs MKV).*
+---
 
-- `ffmpeg.bat`  
-  *Installe FFmpeg via Chocolatey et ajoute les outils video / audio en ligne de commande.*
+# 📦 Installation des outils vidéo
 
-- `videoToImg.ps1`  
-  *Convertisseur video -> audio base sur FFmpeg, avec interface console :*  
-  - Selection du fichier video via une fenetre  
-  - Choix du nom de fichier de sortie et du format (mp3, wav, aac, flac)  
-  - Bandeau ASCII, barre de progression en pourcentage et spinner d’activite  
-  - Fenetre PowerShell qui reste ouverte a la fin
+## 🔹 mkvmerge.bat
+Installe et configure **MKVToolNix (mkvmerge)** via Chocolatey.
 
-- `ActivateScriptPowershell.txt`  
-  *Contient un script PowerShell d’activation (modele a copier / adapter).*
+**Fonctionnalités :**
+- Installation automatique via Chocolatey
+- Outils de fusion / édition de conteneurs MKV
+- Ajout au PATH système
 
-- `KMS.ps1`  
-  *Script PowerShell d’activation via KMS.*
+---
+
+## 🔹 ffmpeg.bat
+Installe **FFmpeg** via Chocolatey.
+
+**Fonctionnalités :**
+- Installation automatique
+- Ajout au PATH
+- Accès aux outils CLI audio / vidéo
+
+---
+
+# 🎬 Outils de conversion
+
+## 🔹 videoToImg.ps1
+Convertisseur vidéo → audio basé sur FFmpeg avec interface console interactive.
+
+### Fonctionnalités :
+- Sélection du fichier vidéo via fenêtre graphique
+- Choix du nom de sortie
+- Choix du format : `mp3`, `wav`, `aac`, `flac`
+- Bandeau ASCII personnalisé
+- Barre de progression en pourcentage
+- Spinner d’activité
+- La fenêtre PowerShell reste ouverte à la fin
+
+---
+
+# 🔐 Scripts d’activation
+
+## 🔹 ActivateScriptPowershell.txt
+Modèle de script PowerShell d’activation à copier / adapter selon le besoin.
+
+---
+
+## 🔹 KMS.ps1
+Script PowerShell d’activation via serveur KMS.
+
+---
+
+# 🏢 Administration Active Directory
+
+## 🔹 FSMOChecker.txt
+Commande permettant de vérifier les rôles FSMO d’un domaine Active Directory.
+
+### Commande :
+```cmd
+NETDOM QUERY /Domain:seemoine.local FSMO
