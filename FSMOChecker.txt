@@ -1,0 +1,1 @@
+NETDOM QUERY /Domain:seemoine.local FSMO
